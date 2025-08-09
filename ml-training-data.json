@@ -1,0 +1,47 @@
+{
+  "trainingData": [
+    {
+      "symptoms": ["fever", "cough", "body_ache"],
+      "disease": "Flu",
+      "confidence": 0.9,
+      "timestamp": "2025-01-15T10:30:00Z"
+    },
+    {
+      "symptoms": ["runny_nose", "cough", "sore_throat"],
+      "disease": "Common Cold",
+      "confidence": 0.8,
+      "timestamp": "2025-01-14T14:20:00Z"
+    },
+    {
+      "symptoms": ["nausea", "vomiting", "diarrhea"],
+      "disease": "Stomach Flu",
+      "confidence": 0.85,
+      "timestamp": "2025-01-13T09:15:00Z"
+    },
+    {
+      "symptoms": ["headache", "nausea", "dizziness"],
+      "disease": "Migraine",
+      "confidence": 0.75,
+      "timestamp": "2025-01-12T16:45:00Z"
+    },
+    {
+      "symptoms": ["rash", "fever", "fatigue"],
+      "disease": "Chickenpox",
+      "confidence": 0.9,
+      "timestamp": "2025-01-11T11:30:00Z"
+    },
+    {
+      "symptoms": ["cough", "fever", "shortness_of_breath"],
+      "disease": "Pneumonia",
+      "confidence": 0.95,
+      "timestamp": "2025-01-10T13:20:00Z"
+    }
+  ],
+  "modelInfo": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-15",
+    "totalRecords": 6,
+    "accuracy": "85%",
+    "description": "Simple Naive Bayes-like disease prediction model based on symptom matching"
+  }
+} 

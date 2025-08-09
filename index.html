@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Health Monitoring</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Student Health Monitoring System</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Enter Student Health Details</h2>
+            <form id="healthForm">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">Parent Phone:</label>
+                <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="9876543210">
+
+                <label for="admissionDate">Admission Date:</label>
+                <input type="date" id="admissionDate" required>
+
+                <label>Add Symptom:</label>
+                <div class="symptom-controls">
+                    <select id="symptomSelect">
+                        <option value="">-- Select a Symptom --</option>
+                        <option value="fever">Fever</option>
+                        <option value="cough">Cough</option>
+                        <option value="runny_nose">Runny Nose</option>
+                        <option value="vomiting">Vomiting</option>
+                        <option value="rash">Rash</option>
+                        <option value="headache">Headache</option>
+                        <option value="sore_throat">Sore Throat</option>
+                        <option value="nausea">Nausea</option>
+                        <option value="fatigue">Fatigue</option>
+                        <option value="loss_of_appetite">Loss of Appetite</option>
+                        <option value="body_ache">Body Ache</option>
+                        <option value="diarrhea">Diarrhea</option>
+                        <option value="dizziness">Dizziness</option>
+                        <option value="chest_pain">Chest Pain</option>
+                        <option value="shortness_of_breath">Shortness of Breath</option>
+                    </select>
+                    <button type="button" id="addSymptoms">Add Symptom</button>
+                </div>
+
+                <div id="symptomList" class="symptom-list"></div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Student Health Records</h2>
+            <table id="healthTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Parent Phone</th>
+                        <th>Admission Date</th>
+                        <th>Symptoms</th>
+                        <th>Disease Prediction</th>
+                        <th>Confidence</th>
+                        <th>Status</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Health Monitoring</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Database Configuration
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_PASSWORD=
+MYSQL_DATABASE=health_monitoring
+MYSQL_PORT=3306
+
+# Flask Configuration
+SECRET_KEY=health_monitoring_secret_key_2024
